@@ -1202,12 +1202,13 @@ const phoneValid =
             </a>
           </div>
         </div>
-
-        <div className="hero-image">
-          <div className="image-placeholder">
-            {t.hero.image}
-          </div>
-        </div>
+<div className="hero-image">
+  <img
+    src="/images/Treatment_Room.png"
+    alt="DermaFlow treatment room"
+    className="hero-clinic-photo"
+  />
+</div>
       </section>
 
       {/* ================= SERVICES ================= */}
@@ -1233,23 +1234,30 @@ const phoneValid =
           </p>
         </div>
 
-        <div className="services-grid">
-          {services.map(
-            (service) => (
-              <div
-                className="service-card"
-                key={
-                  service.id
-                }
-              >
-                <div className="service-image">
-                  <span>
-                    0
-                    {
-                      service.id
-                    }
-                  </span>
-                </div>
+      <div className="services-grid">
+  {services.map((service) => (
+    <div
+      className="service-card"
+      key={service.id}
+    >
+      <div className="service-image">
+        <img
+          src={
+            {
+              1: "/images/Laser_Hair_Removal.png",
+              2: "/images/Hydrafacial.png",
+              3: "/images/Skin_Rejuvenation.png",
+              4: "/images/Acne_Treatment.png",
+              5: "/images/Pigmentation_Treatment.png",
+              6: "/images/Deep_Cleansing_Facial.png",
+            }[service.id]
+          }
+          alt={getServiceTitle(service)}
+          className="service-photo"
+        />
+      </div>
+
+      {/* Keep the existing service content below */}
 
                 <div className="service-content">
                   <h3>
@@ -1395,12 +1403,19 @@ const phoneValid =
                   specialist.id
                 }
               >
-                <div className="specialist-image">
-                  {
-                    t.specialists
-                      .photo
-                  }
-                </div>
+           <div className="specialist-image">
+  <img
+    src={
+      {
+        1: "/images/Dr_Lina_Ahmad.png",
+        2: "/images/Dr_Sara_Khalil.png",
+        3: "/images/Dr_Maya_Ali.png",
+      }[specialist.id]
+    }
+    alt={specialist.name}
+    className="specialist-photo"
+  />
+</div>
 
                 <div className="specialist-info">
                   <h3>

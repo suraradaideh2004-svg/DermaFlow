@@ -203,7 +203,7 @@ function StaffLogin({
 
   return (
     <div
-      className="login-page"
+      className="login-page staff-login-page"
       dir={
         isArabic
           ? "rtl"
