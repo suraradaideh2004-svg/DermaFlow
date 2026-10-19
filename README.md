@@ -1,16 +1,77 @@
-# React + Vite
+# DermaFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DermaFlow is a full-stack clinic management and appointment booking prototype designed for laser and skincare clinics.
 
-Currently, two official plugins are available:
+The project was built to explore how a clinic can manage the complete journey from online booking to treatment plans and session tracking through one integrated system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+### Client Website
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Online appointment booking
+- Treatment selection
+- Specialist selection
+- Available date and time selection
+- Arabic / English interface
+- Responsive design
 
-## Expanding the ESLint configuration
+### Admin Dashboard
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Today's clinic schedule
+- Booking Inbox for website requests
+- Appointment management
+- Confirm, reschedule, cancel and complete appointments
+- Client profiles
+- Treatment plan creation
+- Treatment session tracking
+- Client treatment history
+- Suggested next-session dates
+- Scheduling preferences
+
+### Client Portal
+
+- Upcoming appointments
+- Active treatment plans
+- Session progress
+- Session history
+- Suggested next visits
+- Scheduling preference alerts
+
+## Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- React Router
+- CSS
+
+### Backend
+
+- Node.js
+- Express.js
+- REST API
+
+### Database
+
+- PostgreSQL
+- Neon
+
+## Project Structure
+
+```text
+clinic-booking/
+│
+├── src/
+│   ├── pages/
+│   ├── data/
+│   ├── config/
+│   └── utils/
+│
+├── Backend/
+│   ├── routes/
+│   ├── server.js
+│   ├── db.js
+│   └── schema.sql
+│
+└── README.md
